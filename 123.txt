@@ -1,5 +1,0 @@
-print_usage() 
-{ echo "Usage: $0 filename lines" 
-exit 2 
-}
-
