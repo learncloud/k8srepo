@@ -6,7 +6,7 @@
 apiVersion: v1
 kind: ServiceAccount
 metadata:
-  name: calicoctl
+  name: jjh-calicoctl-ServiceAccount
   namespace: kube-system
 
 ---
@@ -14,7 +14,7 @@ metadata:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: calicoctl
+  name: jjh-calicoctl-pod
   namespace: kube-system
 spec:
   nodeSelector:
