@@ -4,7 +4,7 @@
 kind: ConfigMap
 apiVersion: v1
 metadata:
-  name: calico-config
+  name: jjh-calico-config
   namespace: kube-system
 data:
   # Typha is disabled.
