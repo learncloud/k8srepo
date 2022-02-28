@@ -2,7 +2,7 @@
 ## Prerequisites
 * 해당 install script는 폐쇄망 기준 가이드입니다.
 * Image repository에 CNI 설치시 필요한 이미지를 push 해야합니다.
-    * https://github.com/tmax-cloud/install-cni/tree/5.0 의 폐쇄망 구축 가이드의 1. 과 3. 과정을 진행합니다.
+    * https://github.com/learncloud/k8srepo/tree/main/v5.0/install-cni-5.0 의 폐쇄망 구축 가이드의 1. 과 3. 과정을 진행합니다.
 
 ## Step1. cni.config 설정
 * 목적: `Calico CNI 설치를 위한 config 변수 설정`
