@@ -1,3 +1,7 @@
+# 자세한 설치 가이드는 https://heliotrope-purple-a32.notion.site/7-Guide-install-K8S-CNI-Plugin-to-Calico-Main-Master-9226374a6dd24003a843dba29c201a26 참고
+
+
+
 
 # CNI 설치 가이드
 * CNI 플러그인 중 하나인 Calico CNI를 사용하며, 3.13 이후 버전 사용 필요
