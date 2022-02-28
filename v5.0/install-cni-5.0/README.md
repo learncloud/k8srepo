@@ -47,12 +47,16 @@
 2. 필요한 yaml을 다운로드한다.
     * calico yaml을 다운로드한다. (대역 설정을 위함)
     ```bash
-    $ curl https://raw.githubusercontent.com/tmax-cloud/install-cni/5.0/manifest/yaml/calico.yaml > calico.yaml
+    curl https://raw.githubusercontent.com/tmax-cloud/install-cni/5.0/manifest/yaml/calico.yaml > calico.yaml
+    or
+    curl -LJ -o calico.yaml https://github.com/learncloud/k8srepo/blob/main/v5.0/install-cni-5.0/manifest/yaml/calico.yaml?raw=true
     ```
 
     * calicoctl yaml을 다운로드한다.
     ```bash
-    $ curl https://raw.githubusercontent.com/tmax-cloud/install-cni/5.0/manifest/yaml/calicoctl.yaml > calicoctl.yaml
+    curl https://raw.githubusercontent.com/tmax-cloud/install-cni/5.0/manifest/yaml/calicoctl.yaml > calicoctl.yaml
+    or
+    curl -LJ -o calicoctl.yaml https://github.com/learncloud/k8srepo/blob/main/v5.0/install-cni-5.0/manifest/yaml/calicoctl.yaml?raw=true
     ```
 
 
