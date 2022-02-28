@@ -1,13 +1,9 @@
-
-
-
 # Nginx Ingress Controller 설치 가이드
 ![image](https://user-images.githubusercontent.com/56222864/155953318-00fee0fa-692f-47ca-aa3b-660d73ead073.png)
 
 ## 구성 요소 및 버전
 * nginx-ingress-controller ([quay.io/kubernetes-ingress-controller/nginx-ingress-controller:0.33.0](https://quay.io/repository/kubernetes-ingress-controller/nginx-ingress-controller?tab=tags))
 * kube-webhook-certgen ([docker.io/jettech/kube-webhook-certgen:v1.2.2](https://hub.docker.com/layers/jettech/kube-webhook-certgen/v1.2.2/images/sha256-4ecb4e11ce3b77a6ca002eeb88d58652d0a199cc802a0aae2128c760300ed4de?context=explore))
-![image](https://user-images.githubusercontent.com/56222864/155953292-9c57339d-d230-4e33-925a-b5b159cd7951.png)
 
 ## Prerequisites
 
