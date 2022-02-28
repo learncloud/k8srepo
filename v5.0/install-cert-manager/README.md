@@ -10,13 +10,15 @@ export CERT_MANAGER_WORKDIR=~/cert-manager-install
 ```
 
 * 이미지 환경 변수 설정
-  * 아래의 예시는 v1.5.4 기준. 버전에 맞게 
+  * 아래의 예시는 v1.5.4 기준. 버전에 맞게 설정 하면됩니다
 ```
 export CERT_MANAGER_VERSION=v1.5.4
 export IMG_CERT_MANAGER_CONTROLLER=quay.io/jetstack/cert-manager-controller:$CERT_MANAGER_VERSION
 export IMG_CERT_MANAGER_WEBHOOK=quay.io/jetstack/cert-manager-webhook:$CERT_MANAGER_VERSION
 export IMG_CERT_MANAGER_CA_INJECTOR=quay.io/jetstack/cert-manager-cainjector:$CERT_MANAGER_VERSION
 ```
+
+  * 위와 같이 버전을 명시해줘야 아래 그림과 같이 선택해서 원하는 버전을 다운할 수 있습니다
 * 작업 디렉토리로 이동
 ```
 cd $CERT_MANAGER_WORKDIR
