@@ -19,7 +19,7 @@ export IMG_CERT_MANAGER_CA_INJECTOR=quay.io/jetstack/cert-manager-cainjector:$CE
 ```
 
   * 위와 같이 버전을 명시해줘야 아래 그림과 같이 선택해서 원하는 버전을 다운할 수 있습니다
-  ![](https://github.com/tmax-cloud/install-hypercloud/blob/5.0/figure/create-hypercloud5-group.png)
+  ![](https://github.com/learncloud/k8srepo/blob/main/v5.0/install-cert-manager/figure/cert.png)
 * 작업 디렉토리로 이동
 ```
 cd $CERT_MANAGER_WORKDIR
