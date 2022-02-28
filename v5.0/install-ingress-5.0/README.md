@@ -68,15 +68,11 @@
     * [system.yaml](manifest/system.yaml) 실행 
 	```bash
 	kubectl apply -f system.yaml
+	kubectl get pods -n ingress-nginx-system
 	```
 	* 설치 확인
-	```console
-	$ kubectl get pods -n ingress-nginx
-    NAME                                        READY   STATUS      RESTARTS   AGE
-    ingress-nginx-admission-create-jxcjs        0/1     Completed   0          11s
-    ingress-nginx-admission-patch-h7kv5         0/1     Completed   0          11s
-    ingress-nginx-controller-579fddb54f-xhvmn   1/1     Running     0          11s
-    ```
+	![](https://github.com/learncloud/k8srepo/blob/main/v5.0/install-ingress-5.0/figure/ingress-nginx.png)
+	
 * `Trouble Shoot 1`
     * 현상: 
         - ingress에 정의한 host주소로 연결이 안됨
