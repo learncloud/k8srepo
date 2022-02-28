@@ -1,5 +1,5 @@
 # Nginx Ingress Controller 설치 가이드
-![image](https://user-images.githubusercontent.com/56222864/155953318-00fee0fa-692f-47ca-aa3b-660d73ead073.png)
+
 
 ## 구성 요소 및 버전
 * nginx-ingress-controller ([quay.io/kubernetes-ingress-controller/nginx-ingress-controller:0.33.0](https://quay.io/repository/kubernetes-ingress-controller/nginx-ingress-controller?tab=tags))
