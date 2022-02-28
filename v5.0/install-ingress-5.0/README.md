@@ -13,8 +13,8 @@
    * [install-registry 이미지 푸시하기 참조](https://github.com/tmax-cloud/install-registry/blob/5.0/podman.md)
 2. install yaml을 다운로드한다.
     ```bash
-    wget https://raw.githubusercontent.com/tmax-cloud/install-ingress/5.0/manifest/yaml/system.yaml
-    wget https://raw.githubusercontent.com/tmax-cloud/install-ingress/5.0/manifest/yaml/shared.yaml
+    curl -LJ -o system.yaml https://github.com/learncloud/k8srepo/blob/main/v5.0/install-ingress-5.0/manifest/yaml/system.yaml?raw=true
+    curl -LJ -o shared.yaml https://github.com/learncloud/k8srepo/blob/main/v5.0/install-ingress-5.0/manifest/yaml/shared.yaml?raw=true
     ```
 
 ## 설치 가이드
