@@ -1,4 +1,4 @@
-# 자세한 설치 가이드는 https://heliotrope-purple-a32.notion.site/7-Guide-install-K8S-CNI-Plugin-to-Calico-Main-Master-9226374a6dd24003a843dba29c201a26 참고
+# 자세한 설치 가이드는 NOTION 참고-
 
 
 
