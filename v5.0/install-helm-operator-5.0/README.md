@@ -93,11 +93,9 @@
 ## Step 1. Pod 상태 확인
 * 목적 : `Helm Operator 정상 기동 확인`
 * 아래 command로 Pod 상태가 running인지 확인
-	```console
-	$ kubectl get pods -n helm-ns
-    NAME                               READY   STATUS    RESTARTS   AGE
-    helm-operator-79f99c9df5-xpckn     1/1     Running   0          11s
-  ```
+![](https://github.com/learncloud/k8srepo/blob/main/v5.0/install-helm-operator-5.0/figure/helm.png)
+    
+	
 
 ## Step 2. 테스트 CR 생성
 * 목적 : `HelmRelease CR를 통한 k8s 리소스 배포 테스트`
