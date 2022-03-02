@@ -93,6 +93,7 @@
 ## Step 1. Pod 상태 확인
 * 목적 : `Helm Operator 정상 기동 확인`
 * 아래 command로 Pod 상태가 running인지 확인
+
 ![](https://github.com/learncloud/k8srepo/blob/main/v5.0/install-helm-operator-5.0/figure/helm.png)
     
 	
