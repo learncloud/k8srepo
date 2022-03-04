@@ -47,34 +47,43 @@
 2. 필요한 yaml을 다운로드한다.
     * calico yaml을 다운로드한다. (대역 설정을 위함)
     ```bash
-    $ curl https://raw.githubusercontent.com/tmax-cloud/install-cni/5.0/manifest/yaml/calico.yaml > calico.yaml
+    curl https://raw.githubusercontent.com/tmax-cloud/install-cni/5.0/manifest/yaml/calico.yaml > calico.yaml
+
+    ##위 파일이 안될경우 아래 주소 이용
+    curl -LJ -o calico.yaml https://github.com/learncloud/k8srepo/blob/main/v5.0/install-cni-5.0/manifest/yaml/calico.yaml?raw=true
+
     ```
 
     * calicoctl yaml을 다운로드한다.
     ```bash
-    $ curl https://raw.githubusercontent.com/tmax-cloud/install-cni/5.0/manifest/yaml/calicoctl.yaml > calicoctl.yaml
+    curl https://raw.githubusercontent.com/tmax-cloud/install-cni/5.0/manifest/yaml/calicoctl.yaml > calicoctl.yaml
+
+    ##위 파일이 안될경우 아래 주소 이용
+    curl -LJ -o calicoctl.yaml https://github.com/learncloud/k8srepo/blob/main/v5.0/install-cni-5.0/manifest/yaml/calicoctl.yaml?raw=true
+
     ```
 
 
 3. 과정1. 에서 생성한 tar 파일들을 폐쇄망 환경으로 이동시킨 뒤 사용하려는 registry에 이미지를 push한다.
     ```bash
-    $ sudo docker load < calico-node_${CNI_VERSION}.tar
-    $ sudo docker load < calico-pod2daemon-flexvol_${CNI_VERSION}.tar
-    $ sudo docker load < calico-cni_${CNI_VERSION}.tar
-    $ sudo docker load < calico-kube-controllers_${CNI_VERSION}.tar
-    $ sudo docker load < calico-ctl_${CTL_VERSION}.tar
+    sudo docker load < calico-node_${CNI_VERSION}.tar
+    sudo docker load < calico-pod2daemon-flexvol_${CNI_VERSION}.tar
+    sudo docker load < calico-cni_${CNI_VERSION}.tar
+    sudo docker load < calico-kube-controllers_${CNI_VERSION}.tar
+    sudo docker load < calico-ctl_${CTL_VERSION}.tar
     
-    $ sudo docker tag calico/node:${CNI_VERSION} ${REGISTRY}/calico/node:${CNI_VERSION}
-    $ sudo docker tag calico/pod2daemon-flexvol:${CNI_VERSION} ${REGISTRY}/calico/pod2daemon-flexvol:${CNI_VERSION}
-    $ sudo docker tag calico/cni:${CNI_VERSION} ${REGISTRY}/calico/cni:${CNI_VERSION}
-    $ sudo docker tag calico/kube-controllers:${CNI_VERSION} ${REGISTRY}/calico/kube-controllers:${CNI_VERSION}
-    $ sudo docker tag calico/ctl:${CTL_VERSION} ${REGISTRY}/calico/ctl:${CTL_VERSION}
+    sudo docker tag calico/node:${CNI_VERSION} ${REGISTRY}/calico/node:${CNI_VERSION}
+    sudo docker tag calico/pod2daemon-flexvol:${CNI_VERSION} ${REGISTRY}/calico/pod2daemon-flexvol:${CNI_VERSION}
+    sudo docker tag calico/cni:${CNI_VERSION} ${REGISTRY}/calico/cni:${CNI_VERSION}
+    sudo docker tag calico/kube-controllers:${CNI_VERSION} ${REGISTRY}/calico/kube-controllers:${CNI_VERSION}
+    sudo docker tag calico/ctl:${CTL_VERSION} ${REGISTRY}/calico/ctl:${CTL_VERSION}
    
-    $ sudo docker push ${REGISTRY}/calico/node:${CNI_VERSION}
-    $ sudo docker push ${REGISTRY}/calico/pod2daemon-flexvol:${CNI_VERSION}
-    $ sudo docker push ${REGISTRY}/calico/cni:${CNI_VERSION}
-    $ sudo docker push ${REGISTRY}/calico/kube-controllers:${CNI_VERSION}
-    $ sudo docker push ${REGISTRY}/calico/ctl:${CTL_VERSION}
+    sudo docker push ${REGISTRY}/calico/node:${CNI_VERSION}
+    sudo docker push ${REGISTRY}/calico/pod2daemon-flexvol:${CNI_VERSION}
+    sudo docker push ${REGISTRY}/calico/cni:${CNI_VERSION}
+    sudo docker push ${REGISTRY}/calico/kube-controllers:${CNI_VERSION}
+    sudo docker push ${REGISTRY}/calico/ctl:${CTL_VERSION}
+    
     ```
 
 
