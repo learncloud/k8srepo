@@ -61,7 +61,8 @@
 	```
 
 ## Step 1. System Nginx Ingress Controller 배포
-* 목적 : `ingress-nginx-shared system namespace, clusterrole, clusterrolebinding, serviceaccount, deployment 생성`
+* 목적 : `ingress-nginx-shared system namespace, clusterrole, clusterrolebinding, serviceaccount, deployment 생성` 
+* 목적 : `system.yaml`파일은 내부용 ingress를 사용하기위해서 만드는 스크립트
 * 생성 순서 : 
     * [system.yaml](manifest/system.yaml) 실행 
 	```bash
@@ -90,6 +91,7 @@
 
 ## Step 2. Shared Nginx Ingress Controller 배포
 * 목적 : `ingress-nginx-shared system namespace, clusterrole, clusterrolebinding, serviceaccount, deployment 생성`
+* 목적 : `shared.yaml`파일은 외부 노출용 ingress를 사용하기위해서 만드는 스크립트
 * 생성 순서 : 
     * [shared.yaml](manifest/shared.yaml) 실행 
     ```bash
