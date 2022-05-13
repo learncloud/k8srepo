@@ -129,31 +129,6 @@
         ```
 
 ## 삭제 가이드
-## Step 0. system yaml, shared yaml 수정
-* 목적 : `설치 yaml에 이미지 registry, 버전 정보를 수정`
-* 생성 순서 : 
-	* 다운로드 받은 install yaml(system.yaml, shared.yaml) 파일을 작업디렉토리($NGINX_INGRESS_HOME)를 만들고 넣는다
-	```bash
-    export NGINX_INGRESS_HOME=~/install-ingress-nginx-system
-    cd $NGINX_INGRESS_HOME
-	```
-    * 아래의 command를 수정하여 사용하고자 하는 image 버전 정보를 수정한다.
-	```bash
-    export NGINX_INGRESS_VERSION=0.33.0
-    export KUBE_WEBHOOK_CERTGEN_VERSION=v1.2.2
-	
-	sed -i 's/{nginx_ingress_version}/'${NGINX_INGRESS_VERSION}'/g' system.yaml
-	sed -i 's/{kube_webhook_certgen_version}/'${KUBE_WEBHOOK_CERTGEN_VERSION}'/g' system.yaml
-	
-	export INGRESS_NGINX_NAME=ingress-nginx-shared
-	export INGRESS_CLASS=nginx-shd
-	
-	sed -i 's/ingress-nginx/'${INGRESS_NGINX_NAME}'/g' shared.yaml
-	sed -i 's/--ingress-class=nginx/--ingress-class='${INGRESS_CLASS}'/g' shared.yaml
-	sed -i 's/ingress-controller-leader-nginx/ingress-controller-leader-'${INGRESS_CLASS}'/g' shared.yaml
-	sed -i 's/{nginx_ingress_version}/'${NGINX_INGRESS_VERSION}'/g' shared.yaml
-	sed -i 's/{kube_webhook_certgen_version}/'${KUBE_WEBHOOK_CERTGEN_VERSION}'/g' shared.yaml
-	```
 
 ## Step 1. System Nginx Ingress Controller 삭제
 
