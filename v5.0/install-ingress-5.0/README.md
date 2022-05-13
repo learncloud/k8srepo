@@ -68,6 +68,10 @@
 	```bash
 	kubectl apply -f system.yaml
 	kubectl get pods -n ingress-nginx-system
+	#or
+	#install-ingress.sh위치는 `manifest/`에 존재
+	#./install-ingress.sh install_system
+	
 	```
 	* 설치 확인
 
@@ -96,6 +100,10 @@
     * [shared.yaml](manifest/shared.yaml) 실행 
     ```bash
     kubectl apply -f shared.yaml
+    #or
+    #install-ingress.sh위치는 `manifest/`에 존재
+    # ./install-ingress.sh install_shared
+
     ```
     * 설치 확인
     ```console
