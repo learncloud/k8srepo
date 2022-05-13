@@ -156,17 +156,12 @@
 	```
 
 ## Step 1. System Nginx Ingress Controller 삭제
-* 목적 : `ingress-nginx-shared system namespace, clusterrole, clusterrolebinding, serviceaccount, deployment 삭제`
-* 생성 순서 : 
-    * [system.yaml](manifest/system.yaml) 실행
-	```bash
-	kubectl delete -f system.yaml
-	```
 
-## Step 2. Shared Nginx Ingress Controller 삭제
-* 목적 : `ingress-nginx-shared system namespace, clusterrole, clusterrolebinding, serviceaccount, deployment 삭제`
-* 생성 순서 : 
-    * [shared.yaml](manifest/shared.yaml) 실행
-    ```bash
-    kubectl delete -f shared.yaml
-    ```
+* system nginx : 
+	```bash
+	./install-ingress.sh uninstall_system
+	```
+* shared nginx : 
+	```bash
+	./install-ingress.sh uninstall_shared
+	```
